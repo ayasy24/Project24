@@ -9,5 +9,4 @@ sql.query(
     } else {
       console.log("Data berhasil ditambahkan: " + res.affectedRows);
     }
-  }
-);
+  });
