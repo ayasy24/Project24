@@ -65,7 +65,7 @@ Book.updateById = (id, Book, result) => {
     });
 };
 //Menghapus buku yang memiliki id = id
-Books.remove = (id, result) => {
+Book.remove = (id, result) => {
     sql.query("DELETE FROM Books WHERE id = ?", id, (err, res) => {
         if (err) {
             console.log("error: ", err);
